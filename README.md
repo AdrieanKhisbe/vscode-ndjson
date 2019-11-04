@@ -1,16 +1,19 @@
-# NDJSON Colorizer [![Version](https://vsmarketplacebadge.apphb.com/version/buster.ndjson-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer)
+# vscode-ndjson
+> Vscode extension to support [NDJSON (newline delimited Json)](http://ndjson.org/) files
 
-> colorizes [NDJSON](http://ndjson.org/) (Newline Delimited JSON) files
+[![Version](https://vsmarketplacebadge.apphb.com/version/AdrieanKhisbe.vscode-ndjson.svg)](https://marketplace.visualstudio.com/items?itemName=AdrieanKhisbe.vscode-ndjson.svg)
+
+This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer)
 
 ## With :)
 
-![](https://i.imgur.com/BxbVa1m.png)
+![](./images/after.png)
 
 ## Without :(
 
-![](https://i.imgur.com/UH4HW2L.png)
+![](./images/before.png)
 
-## FYI
+## Configuration
 
 * By default only `*.ndjson` files are colorized.
 * You can update your settings file(s) as needed, using `"files.associations"`:
