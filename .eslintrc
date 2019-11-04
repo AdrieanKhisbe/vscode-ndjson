@@ -3,5 +3,16 @@
     "extends": [
       "plugin:@typescript-eslint/recommended",
       "plugin:@-k/base"
+    ],
+    "settings": {
+        "import/core-modules": ["vscode"]
+    },
+    "overrides": [
+        {
+            "files": ["src/*.json"],
+            "rules": {
+                "unicorn/filename-case": "off"
+            }
+        }
     ]
 }
