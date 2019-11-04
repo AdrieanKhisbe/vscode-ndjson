@@ -4,3 +4,5 @@
 vsc-extension-quickstart.md
 tmp
 private
+.eslintrc
+.eslintignore
