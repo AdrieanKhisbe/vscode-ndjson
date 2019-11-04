@@ -38,14 +38,14 @@
         "extensions": [
           ".ndjson"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./src/language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "ndjson",
         "scopeName": "source.ndjson",
-        "path": "./syntaxes/ndjson.tmLanguage.json"
+        "path": "./src/ndjson.tmLanguage.json"
       }
     ]
   },
