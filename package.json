@@ -4,7 +4,7 @@
   "description": "colorizes NDJSON (Newline Delimted JSON) files",
   "version": "1.0.0",
   "publisher": "AdrieanKhosbe",
-  "license": "ISC",
+  "license": "MIT",
   "icon": "images/ndjson.png",
   "engines": {
     "vscode": "^1.20.0"
