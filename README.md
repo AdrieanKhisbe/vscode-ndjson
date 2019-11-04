@@ -1,7 +1,7 @@
 # vscode-ndjson
 > Vscode extension to support [NDJSON (newline delimited Json)](http://ndjson.org/) files
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/AdrieanKhisbe.vscode-ndjson.svg)](https://marketplace.visualstudio.com/items?itemName=AdrieanKhisbe.vscode-ndjson.svg)
+[![Version](https://vsmarketplacebadge.apphb.com/version/adrieankhisbe.vscode-ndjson.svg)](https://marketplace.visualstudio.com/items?itemName=adrieankhisbe.vscode-ndjson.svg)
 
 This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer)
 
