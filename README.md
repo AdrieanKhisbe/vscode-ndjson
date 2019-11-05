@@ -8,11 +8,11 @@ This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/ite
 
 ## With :)
 
-![](./images/after.png)
+![With ndjson syntax highlight](./resources/screenshots/after.png)
 
 ## Without :(
 
-![](./images/before.png)
+![Without ndjson](./resources/screenshots/before.png)
 
 ## Configuration
 

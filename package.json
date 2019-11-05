@@ -1,12 +1,12 @@
 {
   "name": "vscode-ndjson",
   "displayName": "VsCode NDJson",
-  "description": "Language Support for NDJson (Newline Delimted JSON) files",
+  "description": "Language Support for NDJson (Newline Delimited JSON) files",
   "version": "0.9.999",
   "publisher": "adrieankhisbe",
   "preview": true,
   "license": "MIT",
-  "icon": "images/ndjson.png",
+  "icon": "resources/icons/ndjson.png",
   "engines": {
     "vscode": "^1.20.0"
   },
