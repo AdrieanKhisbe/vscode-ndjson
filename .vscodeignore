@@ -1,8 +1,13 @@
 .vscode/**
 .vscode-test/**
+test/**
 .gitignore
-vsc-extension-quickstart.md
 tmp
 private
 .eslintrc
 .eslintignore
+src
+out
+node_modules
+tsconfig.json
+webpack.config.json

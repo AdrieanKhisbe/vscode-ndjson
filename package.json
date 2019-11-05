@@ -13,14 +13,16 @@
   "categories": [
     "Programming Languages"
   ],
-  "main": "./out/src/extension",
+  "main": "./dist/vscode-ndjson",
   "activationEvents": [
     "onLanguage:ndjson"
   ],
   "scripts": {
-    "vscode:prepublish": "tsc -p ./",
+    "vscode:prepublish": "webpack --mode production",
+    "compile": "webpack --mode none",
+    "watch": "npm run compile -- --watch",
+    "pretest": "tsc -p .",
     "lint": "eslint . --ext .json,.ts",
-    "compile": "tsc -watch -p ./",
     "test:unit": "node out/test",
     "test": "npm run lint && npm run test:unit"
   },
@@ -31,6 +33,7 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.12.5",
     "@types/vscode": "^1.39.0",
+    "@types/webpack": "^4.39.8",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "chai": "^4.2.0",
@@ -38,8 +41,12 @@
     "eslint-import-resolver-typescript": "^2.0.0",
     "glob": "^7.1.5",
     "mocha": "^6.2.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.4.1",
     "typescript": "^3.6.4",
-    "vscode-test": "^1.2.2"
+    "vscode-test": "^1.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "contributes": {
     "languages": [
@@ -69,5 +76,8 @@
   },
   "bugs": {
     "url": "https://github.com/AdrieanKhisbe/vscode-ndjson/issues"
+  },
+  "dependencies": {
+    "node-jq": "^1.10.3"
   }
 }
