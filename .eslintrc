@@ -1,18 +1,24 @@
 {
     "parser":  "@typescript-eslint/parser",
     "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "plugin:@-k/base"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@-k/base"
     ],
     "settings": {
-        "import/core-modules": ["vscode"]
-    },
-    "overrides": [
-        {
-            "files": ["src/*.json"],
-            "rules": {
-                "unicorn/filename-case": "off"
+        "import/core-modules": ["vscode"],
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts"]
+        },
+        "import/extensions": [".js", ".ts"],
+        "import/resolver": {
+            "typescript": {
+              "alwaysTryTypes": true,
+              "directory": "."
             }
         }
-    ]
+    },
+    "rules": {
+        "lodash-fp/use-fp": "warn",
+        "unicorn/filename-case": "off"
+    }
 }
