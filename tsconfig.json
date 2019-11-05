@@ -16,5 +16,9 @@
         "node_modules",
         ".vscode-test",
         "scripts"
-    ]
+    ],
+    "include": [
+        "./src",
+        "./test"
+    ],
 }
