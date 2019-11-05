@@ -26,17 +26,29 @@ export function checkDiagnostics(document: vscode.TextDocument): void {
   diagnosticCollection.set(document.uri, diagnostics);
 }
 
-const runDiagnostics = (document: vscode.TextDocument): void => {
-  if (!document) return;
-  if (document.languageId === 'ndjson') {
-    checkDiagnostics(document);
-  }
+const runDiagnostics = (editor: vscode.TextEditor): void => {
+  if (!editor || editor.document.languageId !== 'ndjson') return;
+
+  checkDiagnostics(editor.document);
 };
 
-export function activate(ctx: vscode.ExtensionContext): void {
+export function activate(context: vscode.ExtensionContext): void {
   diagnosticCollection = vscode.languages.createDiagnosticCollection('ndjson');
-  ctx.subscriptions.push(diagnosticCollection);
+  context.subscriptions.push(diagnosticCollection);
 
-  ctx.subscriptions.push(vscode.workspace.onDidSaveTextDocument(runDiagnostics));
-  ctx.subscriptions.push(vscode.workspace.onDidOpenTextDocument(runDiagnostics));
+  vscode.window.onDidChangeActiveTextEditor(
+    runDiagnostics,
+      null,
+      context.subscriptions
+  );
+  vscode.window.onDidChangeTextEditorSelection(
+    event => runDiagnostics(event.textEditor),
+      null,
+      context.subscriptions
+  );
+  vscode.workspace.onDidChangeTextDocument(
+      () => runDiagnostics(vscode.window.activeTextEditor),
+      null,
+      context.subscriptions
+  );
 }
