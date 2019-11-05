@@ -45,12 +45,12 @@ export function activate(context: vscode.ExtensionContext): void {
   const opacity = '0.9'; // §TODO: future use, toggle opacity, between mean and max
   ndjsonErrorDecorator = vscode.window.createTextEditorDecorationType({
     dark: {
-      gutterIconPath: context.asAbsolutePath('resources/dark/ndjson-error.svg'),
+      gutterIconPath: context.asAbsolutePath('resources/icons/dark/ndjson-error.svg'),
       gutterIconSize,
       opacity
     },
     light: {
-      gutterIconPath: context.asAbsolutePath('resources/light/ndjson-error.svg'),
+      gutterIconPath: context.asAbsolutePath('resources/icons/light/ndjson-error.svg'),
       gutterIconSize,
       opacity
     }
