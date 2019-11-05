@@ -1,8 +1,8 @@
 {
   "name": "vscode-ndjson",
-  "displayName": "NDJSON Colorizer",
-  "description": "colorizes NDJSON (Newline Delimted JSON) files",
-  "version": "0.9.99",
+  "displayName": "VsCode NDJson",
+  "description": "Language Support for NDJson (Newline Delimted JSON) files",
+  "version": "0.9.999",
   "publisher": "adrieankhisbe",
   "preview": true,
   "license": "MIT",
