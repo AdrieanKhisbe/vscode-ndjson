@@ -77,7 +77,5 @@
   "bugs": {
     "url": "https://github.com/AdrieanKhisbe/vscode-ndjson/issues"
   },
-  "dependencies": {
-    "node-jq": "^1.11.2"
-  }
+  "dependencies": {}
 }
