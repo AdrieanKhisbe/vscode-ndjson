@@ -4,3 +4,5 @@ out
 private
 tmp
 dist
+.DS_Store
+coverage
