@@ -4,15 +4,16 @@
 [![Version](https://vsmarketplacebadge.apphb.com/version/adrieankhisbe.vscode-ndjson.svg)](https://marketplace.visualstudio.com/items?itemName=adrieankhisbe.vscode-ndjson)
 [![Build Status](https://travis-ci.com/AdrieanKhisbe/vscode-ndjson.svg?branch=master)](https://travis-ci.com/AdrieanKhisbe/vscode-ndjson)
 
-This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer)
+## About
 
-## With :)
+This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer),
+initially to add the content of the [Grammar refactor and Language Diagnostic #1 **Pull request**](https://github.com/busterc/vscode-ndjson-colorizer/pull/1)
 
-![With ndjson syntax highlight](./resources/screenshots/after.png)
+Internaly it **reuse json grammar** and add some **language support for JSON**, syntax errors being notably displayed in the gutter.
 
-## Without :(
+## NDJSON support Preview
 
-![Without ndjson](./resources/screenshots/before.png)
+![NDJSON syntax highlight and language support preview](./resources/screenshots/preview.png)
 
 ## Configuration
 
