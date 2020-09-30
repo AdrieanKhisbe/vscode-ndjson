@@ -7,7 +7,7 @@
 ## About
 
 This was forked from [NDJSON Colorizer](https://marketplace.visualstudio.com/items?itemName=buster.ndjson-colorizer),
-initially to add the content of the [Grammar refactor and Language Diagnostic #1 **Pull request**](https://github.com/busterc/vscode-ndjson-colorizer/pull/1)
+initially to add the content of the [Grammar refactor and Language Diagnostic PR n°1 **Pull request**](https://github.com/busterc/vscode-ndjson-colorizer/pull/1)
 
 Internaly it **reuse json grammar** and add some **language support for JSON**, syntax errors being notably displayed in the gutter.
 
