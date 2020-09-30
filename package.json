@@ -2,7 +2,7 @@
   "name": "vscode-ndjson",
   "displayName": "VsCode NDJson",
   "description": "Language Support for NDJson (Newline Delimited JSON) files",
-  "version": "0.9.999",
+  "version": "0.99.0",
   "publisher": "adrieankhisbe",
   "preview": true,
   "license": "MIT",
