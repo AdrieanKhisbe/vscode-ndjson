@@ -29,7 +29,7 @@
   "devDependencies": {
     "@-k/eslint-plugin": "^0.4.1",
     "@types/chai": "^4.2.12",
-    "@types/glob": "^7.1.1",
+    "@types/glob": "^7.1.3",
     "@types/mocha": "^8.0.3",
     "@types/node": "^12.12.5",
     "@types/vscode": "^1.49.0",
@@ -39,7 +39,7 @@
     "chai": "^4.2.0",
     "eslint": "^7.10.0",
     "eslint-import-resolver-typescript": "^2.3.0",
-    "glob": "^7.1.5",
+    "glob": "^7.1.6",
     "mocha": "^8.1.3",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.4.1",
@@ -78,6 +78,6 @@
     "url": "https://github.com/AdrieanKhisbe/vscode-ndjson/issues"
   },
   "dependencies": {
-    "node-jq": "^1.10.3"
+    "node-jq": "^1.11.2"
   }
 }
