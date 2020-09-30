@@ -59,14 +59,14 @@
         "extensions": [
           ".ndjson"
         ],
-        "configuration": "./src/language-configuration.json"
+        "configuration": "./resources/language/language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "ndjson",
         "scopeName": "source.ndjson",
-        "path": "./src/ndjson.tmLanguage.json"
+        "path": "./resources/language/ndjson.tmLanguage.json"
       }
     ]
   },
