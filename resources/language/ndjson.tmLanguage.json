@@ -4,9 +4,11 @@
   "patterns": [
     {
       "begin": "^",
-      "end": "$",
+      "while": "!$",
       "patterns": [
         {
+          "name": "ndjson.line",
+          "comment": "Single json line",
           "include": "source.json"
         }
       ]
