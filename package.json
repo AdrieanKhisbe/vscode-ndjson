@@ -14,9 +14,13 @@
     "Programming Languages"
   ],
   "main": "./dist/vscode-ndjson",
-  "activationEvents": [
-    "onLanguage:ndjson"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrieanKhisbe/vscode-ndjson"
+  },
+  "bugs": {
+    "url": "https://github.com/AdrieanKhisbe/vscode-ndjson/issues"
+  },
   "scripts": {
     "vscode:prepublish": "webpack --mode production",
     "compile": "webpack --mode none",
@@ -26,6 +30,7 @@
     "test:unit": "node out/test",
     "test": "npm run lint && npm run test:unit"
   },
+  "dependencies": {},
   "devDependencies": {
     "@-k/eslint-plugin": "^0.4.1",
     "@types/chai": "^4.2.12",
@@ -48,6 +53,9 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
+  "activationEvents": [
+    "onLanguage:ndjson"
+  ],
   "contributes": {
     "languages": [
       {
@@ -69,13 +77,5 @@
         "path": "./resources/language/ndjson.tmLanguage.json"
       }
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AdrieanKhisbe/vscode-ndjson"
-  },
-  "bugs": {
-    "url": "https://github.com/AdrieanKhisbe/vscode-ndjson/issues"
-  },
-  "dependencies": {}
+  }
 }
